@@ -56,12 +56,12 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
     // Live Data
-    implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.androidx.runtime.livedata)
     // Room
     implementation(libs.androidx.room.runtime)
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
+    // Testing ...
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
