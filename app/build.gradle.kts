@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    // id("com.google.devtools.ksp")
 }
 
 android {
@@ -57,6 +58,10 @@ dependencies {
     // Live Data
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.androidx.runtime.livedata)
+    // Room
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
